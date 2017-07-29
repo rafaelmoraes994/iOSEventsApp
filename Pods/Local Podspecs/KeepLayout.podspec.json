@@ -1,0 +1,75 @@
+{
+  "name": "KeepLayout",
+  "version": "1.7.0",
+  "summary": "Making Auto Layout easier to code.",
+  "homepage": "https://github.com/Tricertops/KeepLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": "Tricertops",
+  "source": {
+    "git": "https://github.com/Tricertops/KeepLayout.git",
+    "tag": "v1.7.0"
+  },
+  "requires_arc": true,
+  "module_name": "KeepLayout",
+  "default_subspecs": "Swift",
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.9",
+    "tvos": "9.0"
+  },
+  "subspecs": [
+    {
+      "name": "ObjC",
+      "source_files": "Sources",
+      "exclude_files": "Sources/*.{swift}",
+      "platforms": {
+        "ios": "5.0",
+        "osx": "10.7",
+        "tvos": "9.0"
+      },
+      "ios": {
+        "frameworks": "UIKit"
+      },
+      "tvos": {
+        "frameworks": "UIKit"
+      },
+      "osx": {
+        "frameworks": "Cocoa",
+        "exclude_files": [
+          "Sources/UIViewController+KeepLayout.{h,m}",
+          "Sources/UIScrollView+KeepLayout.{h,m}"
+        ]
+      }
+    },
+    {
+      "name": "Swift",
+      "dependencies": {
+        "KeepLayout/ObjC": [
+
+        ]
+      },
+      "source_files": "Sources/*.{swift}",
+      "platforms": {
+        "ios": "8.0",
+        "osx": "10.9",
+        "tvos": "9.0"
+      },
+      "ios": {
+        "frameworks": "UIKit"
+      },
+      "tvos": {
+        "frameworks": "UIKit"
+      },
+      "osx": {
+        "frameworks": "Cocoa",
+        "exclude_files": [
+          "Sources/UIViewController+KeepLayout.{h,m}",
+          "Sources/UIScrollView+KeepLayout.{h,m}"
+        ]
+      }
+    }
+  ]
+}

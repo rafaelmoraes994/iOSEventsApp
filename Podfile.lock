@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Floaty (3.0.0)
+  - KeepLayout (1.7.0):
+    - KeepLayout/Swift (= 1.7.0)
+  - KeepLayout/ObjC (1.7.0)
+  - KeepLayout/Swift (1.7.0):
+    - KeepLayout/ObjC
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - Floaty (from `https://github.com/kciter/Floaty`)
+  - KeepLayout (from `https://github.com/Tricertops/KeepLayout.git`)
+
+EXTERNAL SOURCES:
+  Floaty:
+    :git: https://github.com/kciter/Floaty
+  KeepLayout:
+    :git: https://github.com/Tricertops/KeepLayout.git
+
+CHECKOUT OPTIONS:
+  Floaty:
+    :commit: cfecb125c873dbc27b4980c735477602615b8049
+    :git: https://github.com/kciter/Floaty
+  KeepLayout:
+    :commit: 6a490623d33ec4edddfab2d2be3979b1b39f7311
+    :git: https://github.com/Tricertops/KeepLayout.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Floaty: e37e969b7c143471d860f72d9c4175f317a6e023
+  KeepLayout: 1881e51638fab0a0748890748de8deb9f01891a1
+
+PODFILE CHECKSUM: fe80bd43ef5fd01fa7f6d2c5fe9a6f812599fc82
+
+COCOAPODS: 1.1.1
